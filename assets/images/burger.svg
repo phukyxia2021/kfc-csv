@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bunTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="60%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="chickenPatty" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#92400E"/>
+      <stop offset="50%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+    <filter id="burgerSh" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="385" rx="150" ry="22" fill="#000000" opacity="0.15"/>
+
+  <g filter="url(#burgerSh)">
+    <!-- Bottom Bun -->
+    <path d="M130 330 C130 365, 370 365, 370 330 L370 315 L130 315 Z" fill="#D97706"/>
+
+    <!-- Crispy Chicken Patty -->
+    <path d="M105 295 
+             Q120 270 150 285 Q190 260 230 280 Q270 260 310 285 Q350 265 385 285 Q400 300 380 320 
+             Q340 330 300 315 Q260 335 210 320 Q160 330 115 315 Q100 305 105 295 Z" 
+          fill="url(#chickenPatty)"/>
+    <!-- Patty crispy crunchies -->
+    <circle cx="150" cy="295" r="4" fill="#FDE68A"/>
+    <circle cx="210" cy="300" r="5" fill="#FDE68A"/>
+    <circle cx="270" cy="295" r="4.5" fill="#FDE68A"/>
+    <circle cx="330" cy="300" r="4" fill="#FDE68A"/>
+
+    <!-- Cheese melt slice -->
+    <polygon points="120,285 380,285 360,310 250,290 140,315" fill="#FACC15"/>
+
+    <!-- Fresh Lettuce -->
+    <path d="M110 260 
+             C130 280, 160 250, 190 275 
+             C220 250, 260 275, 290 255 
+             C320 275, 350 250, 390 270 
+             L385 250 L115 250 Z" 
+          fill="#22C55E"/>
+    <path d="M110 260 C130 280, 160 250, 190 275 C220 250, 260 275, 290 255 C320 275, 350 250, 390 270" stroke="#15803D" stroke-width="4" fill="none"/>
+
+    <!-- Tomato Slices -->
+    <rect x="135" y="235" width="110" height="22" rx="8" fill="#EF4444"/>
+    <rect x="255" y="235" width="110" height="22" rx="8" fill="#EF4444"/>
+
+    <!-- Top Bun -->
+    <path d="M120 235 C120 120, 380 120, 380 235 Z" fill="url(#bunTop)"/>
+
+    <!-- Sesame Seeds on Bun -->
+    <ellipse cx="200" cy="160" rx="4" ry="7" fill="#FEF3C7" transform="rotate(30 200 160)"/>
+    <ellipse cx="250" cy="145" rx="4" ry="7" fill="#FEF3C7" transform="rotate(-15 250 145)"/>
+    <ellipse cx="300" cy="160" rx="4" ry="7" fill="#FEF3C7" transform="rotate(25 300 160)"/>
+    <ellipse cx="170" cy="190" rx="4" ry="7" fill="#FEF3C7" transform="rotate(-40 170 190)"/>
+    <ellipse cx="225" cy="185" rx="4" ry="7" fill="#FEF3C7" transform="rotate(10 225 185)"/>
+    <ellipse cx="275" cy="180" rx="4" ry="7" fill="#FEF3C7" transform="rotate(-20 275 180)"/>
+    <ellipse cx="330" cy="190" rx="4" ry="7" fill="#FEF3C7" transform="rotate(35 330 190)"/>
+  </g>
+</svg>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page quảng cáo món gà rán KFC giòn rụm đậm vị - Dự án thực hành lập trình web độc lập (Vibe Coding)">
+  <meta name="theme-color" content="#C8102E">
+  <title>KFC Fried Chicken – Vị Ngon Giòn Rụm | Dự Án Học Tập</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="icon" type="image/png" href="images/KFC_logo-image.png">
+</head>
+<body>
+  <!-- Top Educational Disclaimer Bar -->
+  <aside class="disclaimer-bar" role="note" aria-label="Thông báo dự án học tập">
+    <div class="container disclaimer-content">
+      <span class="disclaimer-badge">DỰ ÁN HỌC TẬP</span>
+      <p class="disclaimer-text">
+        Trang web thực hành lập trình giao diện (Vibe Coding). Không phải website chính thức của KFC. Dữ liệu giá &amp; ưu đãi chỉ mang tính chất minh họa.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="brand-link" aria-label="KFC Trang chủ">
+        <img src="images/KFC_logo-image.png" alt="KFC Logo" class="brand-logo" width="100" height="40">
+        <span class="brand-text">Fried Chicken</span>
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button 
+        type="button" 
+        class="menu-toggle" 
+        id="menu-toggle" 
+        aria-label="Mở menu điều hướng" 
+        aria-expanded="false" 
+        aria-controls="site-nav"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav class="site-nav" id="site-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Trang Chủ</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Thực Đơn</a></li>
+          <li class="nav-item"><a href="#promotions" class="nav-link">Ưu Đãi</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Vì Sao Chọn KFC</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">Hỏi Đáp FAQ</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Về Dự Án</a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <a href="#products" class="btn btn-primary btn-sm header-cta">Khám Phá Món</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pill-dot"></span>
+            Bí quyết 11 loại thảo mộc &amp; gia vị gia truyền
+          </div>
+          <h1 class="hero-title">
+            Vàng Ươm Giòn Rụm, <span class="text-accent">Đậm Vị Mê Say</span>
+          </h1>
+          <p class="hero-description">
+            Thưởng thức từng miếng gà rán vàng óng giòn tan bên ngoài, thịt gà mềm ngọt mọng nước bên trong. Bữa tiệc vị giác hoàn hảo dành cho bạn, gia đình và nhóm bạn thân ngay hôm nay!
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary btn-lg">
+              <span>Khám Phá Thực Đơn</span>
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#promotions" class="btn btn-secondary btn-lg">
+              <span>Săn Ưu Đãi Hot</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics / Badges -->
+          <div class="hero-features-strip">
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Thịt gà tươi chuẩn vị</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">30 Phút</span>
+              <span class="metric-label">Giao nhanh nóng giòn</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">4.9 ★</span>
+              <span class="metric-label">Độ yêu thích món ăn</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <div class="floating-badge top-right">
+              <span class="badge-fire">🔥</span>
+              <div>
+                <strong>Hot Deal</strong>
+                <small>Giòn cay bùng nổ</small>
+              </div>
+            </div>
+            <img 
+              src="assets/images/hero-chicken.svg" 
+              alt="Gà rán KFC vàng giòn rụm với gia vị đậm đà" 
+              class="hero-img" 
+              width="450" 
+              height="400"
+            >
+            <div class="floating-badge bottom-left">
+              <span class="badge-icon">🍗</span>
+              <div>
+                <strong>Da Giòn Tan</strong>
+                <small>Thịt mọng nước</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">THỰC ĐƠN HẤP DẪN</span>
+          <h2 class="section-title">Các Món Ăn Nổi Bật</h2>
+          <p class="section-description">
+            Dữ liệu được nạp động từ tệp <code>products.csv</code> bằng JavaScript thuần qua Fetch API. Hãy chọn danh mục bạn muốn thưởng thức.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-controls" role="tablist" aria-label="Lọc danh mục món ăn">
+          <button type="button" class="filter-btn active" data-category="all" role="tab" aria-selected="true">
+            Tất Cả (<span id="count-all">0</span>)
+          </button>
+          <button type="button" class="filter-btn" data-category="chicken" role="tab" aria-selected="false">
+            Gà Rán
+          </button>
+          <button type="button" class="filter-btn" data-category="combo" role="tab" aria-selected="false">
+            Combo Tiệc
+          </button>
+          <button type="button" class="filter-btn" data-category="burger" role="tab" aria-selected="false">
+            Burger
+          </button>
+          <button type="button" class="filter-btn" data-category="sides" role="tab" aria-selected="false">
+            Món Ăn Kèm
+          </button>
+          <button type="button" class="filter-btn" data-category="drinks" role="tab" aria-selected="false">
+            Thức Uống
+          </button>
+        </div>
+
+        <!-- Products Dynamic Container -->
+        <div class="products-grid" id="products-grid" aria-live="polite">
+          <!-- Skeletons rendered initially while loading -->
+          <div class="card product-card skeleton-card">
+            <div class="skeleton skeleton-img"></div>
+            <div class="skeleton-body">
+              <div class="skeleton skeleton-text skeleton-title"></div>
+              <div class="skeleton skeleton-text skeleton-desc"></div>
+              <div class="skeleton skeleton-text skeleton-desc short"></div>
+              <div class="skeleton-footer">
+                <div class="skeleton skeleton-price"></div>
+                <div class="skeleton skeleton-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card product-card skeleton-card">
+            <div class="skeleton skeleton-img"></div>
+            <div class="skeleton-body">
+              <div class="skeleton skeleton-text skeleton-title"></div>
+              <div class="skeleton skeleton-text skeleton-desc"></div>
+              <div class="skeleton skeleton-text skeleton-desc short"></div>
+              <div class="skeleton-footer">
+                <div class="skeleton skeleton-price"></div>
+                <div class="skeleton skeleton-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card product-card skeleton-card">
+            <div class="skeleton skeleton-img"></div>
+            <div class="skeleton-body">
+              <div class="skeleton skeleton-text skeleton-title"></div>
+              <div class="skeleton skeleton-text skeleton-desc"></div>
+              <div class="skeleton skeleton-text skeleton-desc short"></div>
+              <div class="skeleton-footer">
+                <div class="skeleton skeleton-price"></div>
+                <div class="skeleton skeleton-btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Error / Empty State fallback (hidden by default) -->
+        <div class="data-state-box error-box is-hidden" id="products-error" role="alert">
+          <div class="state-icon">⚠️</div>
+          <h3 class="state-title">Không thể tải dữ liệu thực đơn</h3>
+          <p class="state-msg" id="products-error-msg">Không tìm thấy hoặc không đọc được file <code>data/products.csv</code>. Hãy chạy qua máy chủ tĩnh hoặc kiểm tra lại đường dẫn.</p>
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-retry-products">Thử tải lại</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section class="section promotions-section bg-light" id="promotions">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">TIẾT KIỆM HƠN MỖI NGÀY</span>
+          <h2 class="section-title">Chương Trình Ưu Đãi Nổi Bật</h2>
+          <p class="section-description">
+            Cập nhật các chương trình ưu đãi hấp dẫn được nạp tự động từ tệp <code>promotions.csv</code>.
+          </p>
+        </div>
+
+        <!-- Promotions Dynamic Grid -->
+        <div class="promotions-grid" id="promotions-grid" aria-live="polite">
+          <div class="promo-card skeleton-card">
+            <div class="skeleton-body">
+              <div class="skeleton skeleton-badge"></div>
+              <div class="skeleton skeleton-text skeleton-title"></div>
+              <div class="skeleton skeleton-text skeleton-desc"></div>
+              <div class="skeleton skeleton-text skeleton-desc short"></div>
+            </div>
+          </div>
+          <div class="promo-card skeleton-card">
+            <div class="skeleton-body">
+              <div class="skeleton skeleton-badge"></div>
+              <div class="skeleton skeleton-text skeleton-title"></div>
+              <div class="skeleton skeleton-text skeleton-desc"></div>
+              <div class="skeleton skeleton-text skeleton-desc short"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promotions Error Box -->
+        <div class="data-state-box error-box is-hidden" id="promotions-error" role="alert">
+          <div class="state-icon">⚠️</div>
+          <h3 class="state-title">Không thể tải danh sách ưu đãi</h3>
+          <p class="state-msg" id="promotions-error-msg">Không thể đọc dữ liệu từ <code>data/promotions.csv</code>.</p>
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-retry-promotions">Thử tải lại</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Why Choose Us Section -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">GIÁ TRỊ CỐT LÕI</span>
+          <h2 class="section-title">Vì Sao Bạn Luôn Yêu Thích Gà Rán KFC?</h2>
+          <p class="section-description">
+            Sự kết hợp giữa công thức gia truyền chuẩn mực và tinh thần phục vụ tận tâm tạo nên từng bữa ăn ngon miệng.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">11 Thảo Mộc Gia Truyền</h3>
+            <p class="feature-text">
+              Công thức tẩm ướp độc quyền với 11 loại thảo mộc và gia vị tự nhiên tạo nên lớp vỏ đậm đà không lẫn vào đâu được.
+            </p>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Thịt Gà Tươi Chuẩn Chọn Lọc</h3>
+            <p class="feature-text">
+              Nguồn thịt gà tươi sạch được kiểm định vệ sinh an toàn thực phẩm nghiêm ngặt, giữ trọn độ ẩm và vị ngọt tự nhiên.
+            </p>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Chiên Nóng Chuẩn Nhiệt</h3>
+            <p class="feature-text">
+              Từng mẻ gà được canh đúng nhiệt độ và thời gian hoàn hảo để lớp vỏ ngoài vàng rụm giòn tan, bên trong mềm mọng.
+            </p>
+          </article>
+
+          <!-- Feature 4 -->
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"/>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Giao Nhanh Nóng Hổi</h3>
+            <p class="feature-text">
+              Hộp đóng gói chuyên dụng giữ nhiệt thông minh giúp món gà giữ nguyên hương vị và độ giòn tuyệt vời khi nhận hàng.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section bg-light" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">GIẢI ĐÁP THẮC MẮC</span>
+          <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+          <p class="section-description">
+            Danh sách câu hỏi được tải động từ tệp <code>faqs.csv</code> và sắp xếp theo thứ tự hiển thị.
+          </p>
+        </div>
+
+        <!-- FAQ Accordion Container -->
+        <div class="faq-accordion" id="faq-list" aria-label="Danh sách câu hỏi thường gặp">
+          <div class="faq-skeleton skeleton-card">
+            <div class="skeleton skeleton-text" style="height: 48px; border-radius: 8px;"></div>
+            <div class="skeleton skeleton-text" style="height: 48px; border-radius: 8px; margin-top: 12px;"></div>
+            <div class="skeleton skeleton-text" style="height: 48px; border-radius: 8px; margin-top: 12px;"></div>
+          </div>
+        </div>
+
+        <!-- FAQ Error Box -->
+        <div class="data-state-box error-box is-hidden" id="faq-error" role="alert">
+          <div class="state-icon">⚠️</div>
+          <h3 class="state-title">Không thể tải danh sách FAQ</h3>
+          <p class="state-msg" id="faq-error-msg">Không thể đọc file <code>data/faqs.csv</code>.</p>
+          <button type="button" class="btn btn-secondary btn-sm" id="btn-retry-faq">Thử tải lại</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA / Project About Banner -->
+    <section class="section cta-banner-section" id="about">
+      <div class="container">
+        <div class="cta-banner-card">
+          <div class="cta-banner-content">
+            <span class="cta-tag">VIBE CODING LANDING PAGE</span>
+            <h2 class="cta-title">Sẵn Sàng Khám Phá Hương Vị Gà Rán Đậm Đà?</h2>
+            <p class="cta-text">
+              Dự án được xây dựng hoàn toàn bằng <strong>HTML5, CSS3 và JavaScript thuần</strong>, minh họa kỹ thuật đọc và hiển thị dữ liệu từ CSV client-side mà không cần máy chủ backend phức tạp.
+            </p>
+            <div class="cta-buttons">
+              <a href="#products" class="btn btn-primary btn-lg">Xem Lại Thực Đơn</a>
+              <button type="button" class="btn btn-light btn-lg" id="btn-learn-more">Mô Phỏng Đặt Món</button>
+            </div>
+          </div>
+          <div class="cta-banner-graphic" aria-hidden="true">
+            <img src="assets/images/bucket-chicken.svg" alt="" width="260" height="240">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="images/KFC_logo-image.png" alt="KFC Logo" class="footer-logo" width="100" height="40">
+          <span class="footer-brand-title">KFC Landing Page</span>
+        </div>
+        <p class="footer-desc">
+          Dự án thực hành lập trình Web cá nhân (Vibe Coding Project). Thử nghiệm kỹ thuật nạp dữ liệu động từ file CSV phía trình duyệt bằng Vanilla JavaScript.
+        </p>
+        <div class="footer-disclaimer-note">
+          <strong>Thông báo pháp lý:</strong> Dự án học tập phi thương mại. Thương hiệu KFC, logo và tên món ăn là tài sản của Yum! Brands / KFC. Không giả mạo hay thay thế website chính thức.
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Liên Kết Nhanh</h3>
+        <ul class="footer-nav">
+          <li><a href="#home">Trang Chủ</a></li>
+          <li><a href="#products">Thực Đơn Món Ăn</a></li>
+          <li><a href="#promotions">Chương Trình Khuyến Mãi</a></li>
+          <li><a href="#features">Đặc Điểm Nổi Bật</a></li>
+          <li><a href="#faq">Câu Hỏi Thường Gặp</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Công Nghệ Sử Dụng</h3>
+        <ul class="footer-nav">
+          <li>HTML5 Semantic Markup</li>
+          <li>CSS3 Tự Viết (Grid &amp; Flexbox)</li>
+          <li>Vanilla JavaScript (ES6+)</li>
+          <li>Client-side CSV Parser &amp; Fetch API</li>
+          <li>Tối ưu Responsive Mobile-First</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Tài Liệu Dự Án</h3>
+        <p class="footer-text-sm">
+          Tất cả dữ liệu sản phẩm, ưu đãi và câu hỏi thường gặp được cấu hình trong thư mục <code>data/</code>:
+        </p>
+        <ul class="footer-nav file-nav">
+          <li>📁 <code>data/products.csv</code></li>
+          <li>📁 <code>data/promotions.csv</code></li>
+          <li>📁 <code>data/faqs.csv</code></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="copyright">
+        &copy; 2026 KFC Landing Page – Dự án thực hành lập trình Web độc lập.
+      </p>
+      <p class="data-notice">
+        Giá và ưu đãi là dữ liệu minh họa học tập.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Back To Top Button -->
+  <button 
+    type="button" 
+    class="back-to-top" 
+    id="back-to-top" 
+    aria-label="Cuộn về đầu trang"
+    title="Lên đầu trang"
+  >
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Interactive Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- JavaScript -->
+  <script src="js/checkout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

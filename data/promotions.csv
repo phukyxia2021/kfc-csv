@@ -1,0 +1,5 @@
+id,title,description,discount_label,valid_from,valid_to,terms,active
+PR001,"Thứ Ba Mua 1 Tặng 1 Giòn Tan","Nhân đôi niềm vui vào mỗi thứ Ba khi mua bất kỳ miếng gà giòn nào.","MUA 1 TẶNG 1",2026-01-01,2026-12-31,"Áp dụng vào các ngày Thứ 3 hàng tuần. Không áp dụng cùng lúc với thẻ thành viên. Dữ liệu mô phỏng.",true
+PR002,"Combo Trưa Vui Vẻ - Siêu Tiết Kiệm","Thưởng thức trọn vẹn 1 miếng gà giòn cay, 1 khoai chiên và 1 ly nước ngọt với mức giá ưu đãi bất ngờ.","CHỈ 49.000đ",2026-01-01,2026-12-31,"Khung giờ vàng từ 10:00 - 14:00 các ngày trong tuần. Dữ liệu minh họa học tập.",true
+PR003,"Miễn Phí Giao Hàng Tận Nơi","Giao nhanh nóng hổi đến tận cửa nhà cho mọi đơn hàng từ 150.000đ nội thành.","FREESHIP 0Đ",2026-01-01,2026-12-31,"Áp dụng cho đơn hàng trong bán kính 5km. Không giới hạn số lần đặt món.",true
+PR004,"Đại Tiệc Cuối Tuần - Giảm 30%","Họp mặt bạn bè thả ga với ưu đãi giảm ngay 30% cho các combo từ 6 miếng gà trở lên.","GIẢM 30%",2026-01-01,2026-12-31,"Chỉ áp dụng vào Thứ 7 và Chủ Nhật. Dữ liệu thử nghiệm giao diện.",true

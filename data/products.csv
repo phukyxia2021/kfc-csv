@@ -1,0 +1,11 @@
+id,name,category,description,price,badge,image,featured
+P001,Gà Rán Giòn Cay,chicken,"1 miếng gà rán giòn rụm với lớp bột gia vị cay nồng đặc trưng, thơm phức.",39000,Bán chạy,images/products/ga-ran.jpg,TRUE
+P002,Gà Rán Truyền Thống,chicken,"1 miếng gà mềm mọng nước bên trong, da vàng ươm chuẩn 11 loại thảo mộc.",39000,Đặc biệt,assets/images/hero-chicken.svg,TRUE
+P003,Khoai Tây Chiên Giòn,sides,"Khoai tây chiên vàng ruộm cắt sợi vừa vặn, rắc nhẹ muối biển giòn bùi.",25000,Yêu thích,images/products/khoai-tay-chien.jpg,FALSE
+P004,Pepsi Tươi Mát Lạnh,drinks,"1 ly Pepsi có gas mát lạnh sảng khoái, chuẩn vị cùng gà rán giòn tan.",18000,Giải khát,images/products/pepsi.jpg,FALSE
+P005,Burger Gà Giòn Zinger,burger,Burger phi-lê gà cay giòn rụm kẹp xà lách tươi và sốt mayonnaise thượng hạng.,59000,Hot,assets/images/burger.svg,TRUE
+P006,Combo Gà Rán 1 Người,combo,Gồm 1 miếng gà giòn + 1 khoai tây chiên nhỏ + 1 ly Pepsi mát lạnh.,75000,Tiết kiệm,assets/images/bucket-chicken.svg,TRUE
+P007,Cánh Gà Sốt Chua Cay,chicken,"3 cánh gà sốt mật ong chua ngọt cay tê đậm đà, óng ánh hấp dẫn.",65000,Món mới,assets/images/chicken-wings.svg,TRUE
+P008,Bắp Cải Trộn Coleslaw,sides,"Salad bắp cải tím và cà rốt giòn thanh, sốt chua ngọt béo ngậy cân bằng vị giác.",19000,Thanh mát,assets/images/hero-chicken.svg,FALSE
+P009,Combo Gia Đình Vui Vẻ,combo,4 miếng gà rán + 1 burger Zinger + 2 khoai tây chiên + 3 ly Pepsi.,229000,Gia đình,assets/images/bucket-chicken.svg,TRUE
+P010,Trà Đào Thanh Mát,drinks,"Trà đào ướp lạnh ngọt thanh dịu nhẹ, kèm những lát đào giòn tươi sảng khoái.",25000,Thanh nhiệt,images/products/pepsi.jpg,FALSE

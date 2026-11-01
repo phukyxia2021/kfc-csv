@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bucketRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9E1025"/>
+      <stop offset="30%" stop-color="#C8102E"/>
+      <stop offset="70%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#9E1025"/>
+    </linearGradient>
+    <linearGradient id="chickenB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+    <filter id="bShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="405" rx="140" ry="20" fill="#000000" opacity="0.15"/>
+
+  <!-- Golden Chicken Heap on top of bucket -->
+  <g filter="url(#bShadow)">
+    <!-- Pieces in bucket -->
+    <path d="M150 190 C140 130 210 100 240 140 C270 110 330 115 340 170 C360 185 350 220 330 225 L160 225 Z" fill="url(#chickenB)"/>
+    <!-- Individual Drumsticks sticking out -->
+    <!-- Left piece -->
+    <ellipse cx="180" cy="150" rx="35" ry="30" fill="#D97706" transform="rotate(-15 180 150)"/>
+    <circle cx="150" cy="130" r="12" fill="#FEF3C7"/>
+    <!-- Center piece -->
+    <ellipse cx="250" cy="135" rx="42" ry="34" fill="#F59E0B"/>
+    <circle cx="235" cy="125" r="4" fill="#FFFBEB"/>
+    <circle cx="265" cy="135" r="4" fill="#FFFBEB"/>
+    <!-- Right piece -->
+    <ellipse cx="315" cy="155" rx="36" ry="30" fill="#B45309" transform="rotate(20 315 155)"/>
+    <circle cx="345" cy="135" r="12" fill="#FEF3C7"/>
+    <!-- Crispy flakes -->
+    <circle cx="190" cy="145" r="3" fill="#FEF08A"/>
+    <circle cx="250" cy="150" r="4" fill="#FEF08A"/>
+    <circle cx="300" cy="170" r="3.5" fill="#FEF08A"/>
+  </g>
+
+  <!-- Bucket Body -->
+  <g filter="url(#bShadow)">
+    <!-- Main red bucket tapered polygon -->
+    <path d="M130 190 L165 390 Q250 410 335 390 L370 190 Q250 170 130 190 Z" fill="url(#bucketRed)"/>
+
+    <!-- White vertical stripes -->
+    <!-- Stripe 1 -->
+    <path d="M185 184 L205 398 L225 399 L210 181 Z" fill="#FFFFFF"/>
+    <!-- Stripe 2 (center) -->
+    <path d="M275 180 L280 401 L300 400 L300 182 Z" fill="#FFFFFF"/>
+
+    <!-- Rim of bucket -->
+    <ellipse cx="250" cy="190" rx="120" ry="18" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+
+    <!-- Emblem / Label on Bucket -->
+    <rect x="205" y="250" width="90" height="70" rx="10" fill="#FFFFFF"/>
+    <rect x="210" y="255" width="80" height="60" rx="8" fill="#C8102E"/>
+    <text x="250" y="297" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle">KFC</text>
+  </g>
+</svg>

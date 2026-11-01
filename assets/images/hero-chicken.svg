@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE7D6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFF7F0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chickenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="40%" stop-color="#D97706"/>
+      <stop offset="85%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+    <linearGradient id="crustGlow" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="boneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#78350F" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background glow circle -->
+  <circle cx="250" cy="230" r="190" fill="url(#bgGlow)"/>
+
+  <!-- Steam / Aroma lines -->
+  <path d="M190 90 Q 200 65 190 40" stroke="#E11D48" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M250 80 Q 265 50 250 25" stroke="#E11D48" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M310 95 Q 320 70 310 45" stroke="#E11D48" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Shadow below drumstick -->
+  <ellipse cx="260" cy="360" rx="140" ry="22" fill="#000000" opacity="0.12"/>
+
+  <!-- Bone Handle -->
+  <g transform="rotate(-35 150 280)">
+    <path d="M110 270 L170 270 L170 295 L110 295 Z" fill="url(#boneGrad)"/>
+    <circle cx="105" cy="272" r="14" fill="url(#boneGrad)"/>
+    <circle cx="105" cy="292" r="14" fill="url(#boneGrad)"/>
+    <path d="M102 282 Q108 282 108 275" stroke="#CBD5E1" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Crispy Fried Chicken Drumstick Body -->
+  <g filter="url(#shadow)">
+    <!-- Main crispy chicken meat bulk -->
+    <path d="M190 280 
+             C150 250, 150 180, 200 130 
+             C240 90, 310 90, 360 130 
+             C410 170, 420 250, 370 300 
+             C320 350, 240 330, 190 280 Z" 
+          fill="url(#chickenGrad)"/>
+
+    <!-- Crunchy Crispy Crust details -->
+    <path d="M210 140 Q250 110 290 130 Q330 150 350 180" stroke="url(#crustGlow)" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.75"/>
+    <path d="M230 180 Q290 160 340 210 Q370 250 350 280" stroke="url(#crustGlow)" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M190 220 Q240 250 280 270 Q320 290 310 315" stroke="#92400E" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+    <!-- Crispy flakes / texture specks -->
+    <circle cx="230" cy="150" r="4" fill="#FEF08A"/>
+    <circle cx="270" cy="140" r="5" fill="#FEF08A"/>
+    <circle cx="310" cy="165" r="3.5" fill="#FDE68A"/>
+    <circle cx="350" cy="210" r="4.5" fill="#FEF08A"/>
+    <circle cx="320" cy="245" r="5" fill="#FEF08A"/>
+    <circle cx="260" cy="220" r="6" fill="#FDE68A"/>
+    <circle cx="215" cy="240" r="4" fill="#FDE68A"/>
+    <circle cx="280" cy="290" r="3.5" fill="#FEF08A"/>
+    <circle cx="340" cy="285" r="4" fill="#FEF08A"/>
+
+    <!-- Pepper / spice specks -->
+    <circle cx="245" cy="170" r="2" fill="#7F1D1D"/>
+    <circle cx="295" cy="190" r="2.5" fill="#7F1D1D"/>
+    <circle cx="330" cy="150" r="2" fill="#7F1D1D"/>
+    <circle cx="220" cy="205" r="2.5" fill="#7F1D1D"/>
+    <circle cx="275" cy="255" r="2" fill="#7F1D1D"/>
+    <circle cx="365" cy="240" r="2" fill="#7F1D1D"/>
+  </g>
+
+  <!-- Golden shine highlight -->
+  <path d="M235 135 C280 115 330 130 355 160" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.55"/>
+</svg>
